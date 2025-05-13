@@ -1,6 +1,6 @@
 
 param n = 99; 
-param q = 25; 
+param q = 75; 
 param T = 86; 
 param w = 
 1	0.099824697
