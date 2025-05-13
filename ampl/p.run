@@ -1,0 +1,344 @@
+# Define a set of data files to iterate over
+option solver CPLEX; 
+# option cplex_options 'sensitivity';
+# option cplex_options 'alg:sens=1'; # used on laptop version of ampl 
+
+model p.mod; 
+data p_1.dat; 
+solve; 
+display objFunc, q, y; 
+# display _varname, _var;
+# Export values to a txt
+printf "Outputs 30 runs\n" > out10.txt;
+printf "objFunc:%f\n", objFunc >> out10.txt;
+printf "\nx values:\n" >> out10.txt;
+for {i in 1..99} {
+    printf "%f\n", x[i] >> out10.txt;
+}
+
+# reset; 
+# model p.mod; 
+# data p_2.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_3.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_4.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_5.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_6.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_7.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_8.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_9.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_10.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_11.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_12.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_13.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_14.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_15.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_16.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_17.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_18.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_19.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_20.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_21.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_22.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_23.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_24.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_25.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_26.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_27.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_28.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_29.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+# reset;
+# model p.mod; 
+# data p_30.dat; 
+# solve; 
+# display objFunc, q; 
+# printf "\nobjFunc:%f", objFunc >> out10.txt;
+# printf "\nx values:\n" >> out10.txt;
+# for {i in 1..99} {
+#     printf "%f\n", x[i] >> out10.txt;
+# }
+
+
+# loop through q_vals 
+# for {i in 1..30}{
+#     let q := 1+(i+1) * (99-1) / 29; 
+#     solve; 
+#     display objFunc, q; 
+# }
