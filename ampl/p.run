@@ -3,7 +3,7 @@ option solver CPLEX;
 # option cplex_options 'sensitivity';
 # option cplex_options 'alg:sens=1'; # used on laptop version of ampl 
 
-model p.mod; 
+model p_copy.mod; 
 data p_1.dat; 
 solve; 
 display objFunc, q, y; 

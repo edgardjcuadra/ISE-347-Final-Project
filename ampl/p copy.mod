@@ -14,5 +14,5 @@ subject to minAssets: sum{i in 1..n} y[i] <= q;
 subject to allocateWeights: sum{i in 1..n} x[i] = 1; 
 subject to assetWeight {i in 1..n}: x[i] <= y[i]; 
 subject to maxReturn {i in 1..n}: sum{t in 1..T} z[t] >= sum{t in 1..T} (w[i] - x[i]) * r[t, i]; 
-subject to minReturn {i in 1..n}: sum{t in 1..T} z[t] >= sum{t in 1..T} -(w[i] - x[i]) * r[t, i]; 
+# subject to minReturn {i in 1..n}: sum{t in 1..T} z[t] >= sum{t in 1..T} -(w[i] - x[i]) * r[t, i]; 
 # subject to testc: sum{t in 1..T} z[t] >= 0; 
